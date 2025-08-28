@@ -30,14 +30,14 @@ jobs:
           pip install robotframework-browser
           rfbrowser init
 
+      - name: Ensure results folder exists
+        run: mkdir -p results
+
       - name: Run Robot Framework tests
         run: robot -d results orangehrm/tests/**/*.robot
 
-      - name: Upload Robot Framework reports
-        uses: actions/upload-artifact@v4
-        with:
-          name: robot-results
-          path: results/
+      - name: List results folder
+        run: ls -l results
 
       - name: Send Email with Results
         uses: dawidd6/action-send-mail@v3
@@ -50,7 +50,4 @@ jobs:
           body: "O CI/CD do Robot Framework foi executado. Segue o relatório em anexo."
           to: marcoseffers@gmail.com
           from: ${{ secrets.EMAIL_USERNAME }}
-          attachments: |
-            results/report.html
-            results/log.html
-            results/output.xml
+          attachments: results/report.html,results/log.html,results/output.xml
