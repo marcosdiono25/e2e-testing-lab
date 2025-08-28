@@ -50,4 +50,7 @@ jobs:
           body: "O CI/CD do Robot Framework foi executado. Segue o relatório em anexo."
           to: marcoseffers@gmail.com
           from: ${{ secrets.EMAIL_USERNAME }}
-          attachments: results/report.html
+          attachments: |
+            results/report.html
+            results/log.html
+            results/output.xml
