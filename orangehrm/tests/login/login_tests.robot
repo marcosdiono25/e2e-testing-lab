@@ -37,7 +37,7 @@ Login com campos vazios
     Fechar Navegador
 
 Login com senha maiúscula (case sensitive)
-    [Tags]    sad_path    CT_005    login
+    [Tags]    sad_path    CT_005   login
     Abrir a pagina de login
     Preencher o campo Username com     Admin
     Preencher o campo Password com     ADMIN123
