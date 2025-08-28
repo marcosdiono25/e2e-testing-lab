@@ -39,15 +39,8 @@ jobs:
       - name: List results folder
         run: ls -l results
 
-      - name: Send Email with Results
-        uses: dawidd6/action-send-mail@v3
+      - name: Upload Robot Framework reports
+        uses: actions/upload-artifact@v4
         with:
-          server_address: smtp.gmail.com
-          server_port: 465
-          username: ${{ secrets.EMAIL_USERNAME }}
-          password: ${{ secrets.EMAIL_PASSWORD }}
-          subject: Robot Framework CI/CD Results
-          body: "O CI/CD do Robot Framework foi executado. Segue o relatório em anexo."
-          to: marcoseffers@gmail.com
-          from: ${{ secrets.EMAIL_USERNAME }}
-          attachments: results/report.html,results/log.html,results/output.xml
+          name: robot-results
+          path: results/
