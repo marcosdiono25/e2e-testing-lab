@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.13.5 on win32)" generated="2025-08-26T15:24:13.207552" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\tests">
+<suite id="s1-s1" name="Login Tests" source="C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\tests\login_tests.robot">
+<test id="s1-s1-t1" name="Login com credenciais válidas" line="5">
+<kw name="Abrir a pagina de login" owner="login_keywords">
+<kw name="Abrir Navegador" owner="keywords_metodos">
+<kw name="Open Browser" owner="Browser">
+<msg time="2025-08-26T15:24:17.327844" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+<msg time="2025-08-26T15:24:17.333524" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\tests\\browser\\traces\\temp\\fcbcf1bb-b91a-472c-a096-76d0eecd5c82"}</msg>
+<msg time="2025-08-26T15:24:17.983004" level="INFO">Starting Browser process C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:52832</msg>
+<msg time="2025-08-26T15:25:20.239205" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-08-26T15:25:20.239473" level="INFO">See also file:///C:/Users/marcosdionotrabalho/e2e-testing-lab/orangehrm/tests/playwright-log.txt for additional details.</msg>
+<msg time="2025-08-26T15:25:20.259543" level="FAIL">TimeoutError: browserType.launch: Timeout 30000ms exceeded.
+Call log:
+  - &lt;launching&gt; C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --user-data-dir=C:\Users\MARCOS~1\AppData\Local\Temp\playwright_chromiumdev_profile-oBNoIb --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=2796
+</msg>
+<arg>${navegador}</arg>
+<arg>headless=${False}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Opens a new browser instance. Use this keyword for quick experiments or debugging sessions.</doc>
+<status status="FAIL" start="2025-08-26T15:24:17.324745" elapsed="63.195893">TimeoutError: browserType.launch: Timeout 30000ms exceeded.
+Call log:
+  - &lt;launching&gt; C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --user-data-dir=C:\Users\MARCOS~1\AppData\Local\Temp\playwright_chromiumdev_profile-oBNoIb --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=2796
+</status>
+</kw>
+<kw name="New Context" owner="Browser">
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="NOT RUN" start="2025-08-26T15:25:20.521446" elapsed="0.000582"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="NOT RUN" start="2025-08-26T15:25:20.522630" elapsed="0.000547"/>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>${navegador}</arg>
+<status status="FAIL" start="2025-08-26T15:24:17.321783" elapsed="63.201971">TimeoutError: browserType.launch: Timeout 30000ms exceeded.
+Call log:
+  - &lt;launching&gt; C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --user-data-dir=C:\Users\MARCOS~1\AppData\Local\Temp\playwright_chromiumdev_profile-oBNoIb --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=2796
+</status>
+</kw>
+<status status="FAIL" start="2025-08-26T15:24:17.319601" elapsed="63.204578">TimeoutError: browserType.launch: Timeout 30000ms exceeded.
+Call log:
+  - &lt;launching&gt; C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --user-data-dir=C:\Users\MARCOS~1\AppData\Local\Temp\playwright_chromiumdev_profile-oBNoIb --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=2796
+</status>
+</kw>
+<kw name="Preencher o campo Username com" owner="login_keywords">
+<arg>Admin</arg>
+<status status="NOT RUN" start="2025-08-26T15:25:20.525922" elapsed="0.000658"/>
+</kw>
+<kw name="Preencher o campo Password com" owner="login_keywords">
+<arg>admin123</arg>
+<status status="NOT RUN" start="2025-08-26T15:25:20.527871" elapsed="0.000611"/>
+</kw>
+<kw name="Clicar no botão Login" owner="login_keywords">
+<status status="NOT RUN" start="2025-08-26T15:25:20.529759" elapsed="0.000636"/>
+</kw>
+<kw name="Verificar Existencia do Texto">
+<arg>Dashboard</arg>
+<status status="NOT RUN" start="2025-08-26T15:25:20.531680" elapsed="0.000589"/>
+</kw>
+<status status="FAIL" start="2025-08-26T15:24:17.316844" elapsed="63.216733">TimeoutError: browserType.launch: Timeout 30000ms exceeded.
+Call log:
+  - &lt;launching&gt; C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --user-data-dir=C:\Users\MARCOS~1\AppData\Local\Temp\playwright_chromiumdev_profile-oBNoIb --remote-debugging-pipe --no-startup-window
+  - &lt;launched&gt; pid=2796
+</status>
+</test>
+<status status="FAIL" start="2025-08-26T15:24:13.731069" elapsed="66.877147"/>
+</suite>
+<status status="FAIL" start="2025-08-26T15:24:13.212413" elapsed="67.520517"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="0" fail="1" skip="0">Tests</stat>
+<stat name="Login Tests" id="s1-s1" pass="0" fail="1" skip="0">Tests.Login Tests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2025-08-26T15:24:17.327844" level="WARN">Open Browser is for quick experimentation and debugging only. Use New Page for production.</msg>
+</errors>
+</robot>

@@ -1,0 +1,1777 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.1 (Python 3.13.5 on win32)" generated="2025-08-27T22:10:15.610900" rpa="false" schemaversion="5">
+<suite id="s1" name="Orangehrm" source="C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm">
+<suite id="s1-s1" name="Tests" source="C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\tests">
+<suite id="s1-s1-s1" name="Pim" source="C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\tests\pim">
+<suite id="s1-s1-s1-s1" name="Pim Add Employee Tests" source="C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\tests\pim\pim_add_employee_tests.robot">
+<test id="s1-s1-s1-s1-t1" name="Adicionar um novo empregado com sucesso" line="5">
+<kw name="Fazer Login" owner="keywords_metodos">
+<kw name="Abrir a pagina de login" owner="login_keywords">
+<kw name="Abrir Navegador" owner="keywords_metodos">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T22:10:18.978973" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\828ae637-e32b-42b3-baa3-e5ce0c5e3a4f"}</msg>
+<msg time="2025-08-27T22:10:20.046092" level="INFO">Starting Browser process C:\Users\marcosdionotrabalho\AppData\Local\Programs\Python\Python313\Lib\site-packages\Browser\wrapper\index.js using at 127.0.0.1:50197</msg>
+<msg time="2025-08-27T22:10:40.256230" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\828ae637-e32b-42b3-baa3-e5ce0c5e3a4f"}</msg>
+<arg>${navegador}</arg>
+<arg>headless=${True}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:10:18.976016" elapsed="21.280720"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-27T22:10:40.261951" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-08-27T22:10:40.977404" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-27T22:10:40.977641" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:10:40.257371" elapsed="0.720546"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T22:11:01.488332" level="INFO">Keyword 'Take Screenshot  fail-screenshot-{index}' could not be run on failure:
+Error: Tried to take screenshot, but no page was open.</msg>
+<msg time="2025-08-27T22:11:01.488594" level="INFO">See also file:///C:/Users/marcosdionotrabalho/e2e-testing-lab/orangehrm/playwright-log.txt for additional details.</msg>
+<msg time="2025-08-27T22:11:01.519006" level="FAIL">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", waiting until "load"
+</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="FAIL" start="2025-08-27T22:10:40.978456" elapsed="20.951121">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", waiting until "load"
+</status>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>${navegador}</arg>
+<status status="FAIL" start="2025-08-27T22:10:18.954290" elapsed="42.975885">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", waiting until "load"
+</status>
+</kw>
+<status status="FAIL" start="2025-08-27T22:10:18.952620" elapsed="42.977901">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", waiting until "load"
+</status>
+</kw>
+<kw name="Preencher o campo Username com" owner="login_keywords">
+<arg>Admin</arg>
+<status status="NOT RUN" start="2025-08-27T22:11:01.931084" elapsed="0.000606"/>
+</kw>
+<kw name="Preencher o campo Password com" owner="login_keywords">
+<arg>admin123</arg>
+<status status="NOT RUN" start="2025-08-27T22:11:01.932322" elapsed="0.000609"/>
+</kw>
+<kw name="Clicar no botão Login" owner="login_keywords">
+<status status="NOT RUN" start="2025-08-27T22:11:01.933494" elapsed="0.000643"/>
+</kw>
+<status status="FAIL" start="2025-08-27T22:10:18.948191" elapsed="42.986371">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", waiting until "load"
+</status>
+</kw>
+<kw name="Clicar no menu PIM" owner="pim_keywords">
+<status status="NOT RUN" start="2025-08-27T22:11:01.936144" elapsed="0.000646"/>
+</kw>
+<kw name="Clicar no botão Add Employee" owner="pim_keywords">
+<status status="NOT RUN" start="2025-08-27T22:11:01.938102" elapsed="0.000621"/>
+</kw>
+<kw name="Preencher o campo First Name com" owner="pim_keywords">
+<arg>Marcos</arg>
+<status status="NOT RUN" start="2025-08-27T22:11:01.940164" elapsed="0.000654"/>
+</kw>
+<kw name="Preencher o campo Middle Name com" owner="pim_keywords">
+<arg>Dion</arg>
+<status status="NOT RUN" start="2025-08-27T22:11:01.942095" elapsed="0.000612"/>
+</kw>
+<kw name="Preencher o campo Last Name com" owner="pim_keywords">
+<arg>Silva</arg>
+<status status="NOT RUN" start="2025-08-27T22:11:01.943990" elapsed="0.000612"/>
+</kw>
+<kw name="Clicar no botão Save" owner="pim_keywords">
+<status status="NOT RUN" start="2025-08-27T22:11:01.945887" elapsed="0.000627"/>
+</kw>
+<kw name="Verificar Existencia de elemento" owner="keywords_metodos">
+<arg>h6:has-text("Personal Details")</arg>
+<status status="NOT RUN" start="2025-08-27T22:11:01.947782" elapsed="0.000612"/>
+</kw>
+<kw name="Fechar Navegador" owner="keywords_metodos">
+<status status="NOT RUN" start="2025-08-27T22:11:01.949663" elapsed="0.000645"/>
+</kw>
+<msg time="2025-08-27T22:11:02.083043" level="INFO">Switching context to context=eb75b03a-c3dc-48b5-be01-d316c0966d57 in CURRENT</msg>
+<msg time="2025-08-27T22:11:02.100819" level="INFO">Successfully changed active context: context=eb75b03a-c3dc-48b5-be01-d316c0966d57</msg>
+<msg time="2025-08-27T22:11:02.722255" level="INFO">Successfully closed Context</msg>
+<tag>CT_006</tag>
+<tag>happy_path</tag>
+<tag>pim</tag>
+<status status="FAIL" start="2025-08-27T22:10:18.942468" elapsed="43.010626">TimeoutError: page.goto: Timeout 10000ms exceeded.
+Call log:
+  - navigating to "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login", waiting until "load"
+</status>
+</test>
+<test id="s1-s1-s1-s1-t2" name="Adicionar um novo empregado sem preencher campos obrigatórios" line="17">
+<kw name="Fazer Login" owner="keywords_metodos">
+<kw name="Abrir a pagina de login" owner="login_keywords">
+<kw name="Abrir Navegador" owner="keywords_metodos">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T22:11:02.743131" level="INFO">Switching browser to browser=bffbb333-64ea-4ea1-955c-8df77ff8fce2</msg>
+<msg time="2025-08-27T22:11:02.752172" level="INFO">Successfully changed active browser: browser=bffbb333-64ea-4ea1-955c-8df77ff8fce2</msg>
+<msg time="2025-08-27T22:11:02.752539" level="INFO">Reusing existing browser with id: browser=bffbb333-64ea-4ea1-955c-8df77ff8fce2</msg>
+<arg>${navegador}</arg>
+<arg>headless=${True}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:02.740493" elapsed="0.012770"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-27T22:11:02.760667" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-08-27T22:11:02.801876" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-27T22:11:02.802088" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:02.753901" elapsed="0.048401"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T22:11:06.711365" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-27T22:11:02.802819" elapsed="3.909083"/>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>${navegador}</arg>
+<status status="PASS" start="2025-08-27T22:11:02.738841" elapsed="3.973443"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:02.737208" elapsed="3.975294"/>
+</kw>
+<kw name="Preencher o campo Username com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:11.276336" level="INFO">Waited for Element with selector input[name="username"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:06.716192" elapsed="4.560585"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:11.279259" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:11.277317" elapsed="0.965785"/>
+</kw>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-08-27T22:11:06.714505" elapsed="5.529335"/>
+</kw>
+<arg>Admin</arg>
+<status status="PASS" start="2025-08-27T22:11:06.712958" elapsed="5.531132"/>
+</kw>
+<kw name="Preencher o campo Password com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:12.292552" level="INFO">Waited for Element with selector input[name="password"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:12.247865" elapsed="0.045183"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:12.295487" level="INFO">Fills the text 'admin123' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:12.293574" elapsed="0.067207"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-27T22:11:12.246238" elapsed="0.114934"/>
+</kw>
+<arg>admin123</arg>
+<status status="PASS" start="2025-08-27T22:11:12.244577" elapsed="0.116815"/>
+</kw>
+<kw name="Clicar no botão Login" owner="login_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:12.406119" level="INFO">Waited for Element with selector button:has-text("Login") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:12.364836" elapsed="0.041764"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:12.408956" level="INFO">Clicks the element 'button:has-text("Login")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:12.407118" elapsed="2.025959"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:12.363322" elapsed="2.070109"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:12.361872" elapsed="2.071770"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:02.735592" elapsed="11.698223"/>
+</kw>
+<kw name="Clicar no menu PIM" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:15.777134" level="INFO">Waited for Element with selector span.oxd-main-menu-item--name:has-text("PIM") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:14.438047" elapsed="1.339526"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:15.779898" level="INFO">Clicks the element 'span.oxd-main-menu-item--name:has-text("PIM")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:15.778109" elapsed="1.319404"/>
+</kw>
+<arg>${PIM_MENU}</arg>
+<status status="PASS" start="2025-08-27T22:11:14.436486" elapsed="2.661394"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:14.434915" elapsed="2.663163"/>
+</kw>
+<kw name="Clicar no botão Add Employee" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:17.633755" level="INFO">Waited for Element with selector a:has-text("Add Employee") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:17.102683" elapsed="0.531524"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:17.636627" level="INFO">Clicks the element 'a:has-text("Add Employee")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:17.634814" elapsed="0.796798"/>
+</kw>
+<arg>${ADD_EMPLOYEE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:17.100792" elapsed="1.331176"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:17.099327" elapsed="1.332840"/>
+</kw>
+<kw name="Clicar no botão Save" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:19.203006" level="INFO">Waited for Element with selector button:has-text("Save") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:18.446968" elapsed="0.756729"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:19.206400" level="INFO">Clicks the element 'button:has-text("Save")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:19.204627" elapsed="0.435261"/>
+</kw>
+<arg>${SAVE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:18.445440" elapsed="1.194824"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:18.434826" elapsed="1.205632"/>
+</kw>
+<kw name="Verificar Existencia de Texto" owner="keywords_metodos">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-08-27T22:11:19.732082" level="INFO">Found locator('text=Required').first() Locators successfully.</msg>
+<msg time="2025-08-27T22:11:19.732803" level="INFO">${elementos} = ['text=Required &gt;&gt; nth=0']</msg>
+<var>${elementos}</var>
+<arg>text=${texto}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:19.643052" elapsed="0.089907"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-27T22:11:19.734516" level="INFO">Length is 1.</msg>
+<msg time="2025-08-27T22:11:19.734819" level="INFO">${quantidade} = 1</msg>
+<var>${quantidade}</var>
+<arg>${elementos}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-27T22:11:19.733464" elapsed="0.001467"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T22:11:19.738396" level="INFO">"1 elemento(s) encontrado(s) com o texto 'Required'"</msg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T22:11:19.737272" elapsed="0.001333"/>
+</kw>
+<arg>${quantidade} &gt;= 1</arg>
+<arg>Log</arg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:19.735689" elapsed="0.003161"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${quantidade} &lt; 1</arg>
+<arg>Fail</arg>
+<arg>"Nenhum elemento encontrado com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:19.739326" elapsed="0.001172"/>
+</kw>
+<arg>Required</arg>
+<status status="PASS" start="2025-08-27T22:11:19.641570" elapsed="0.099271"/>
+</kw>
+<kw name="Fechar Navegador" owner="keywords_metodos">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-27T22:11:21.410861" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-27T22:11:19.743301" elapsed="1.668085"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:19.741889" elapsed="1.669804"/>
+</kw>
+<tag>CT_007</tag>
+<tag>pim</tag>
+<tag>sad_path</tag>
+<status status="PASS" start="2025-08-27T22:11:02.726209" elapsed="18.687898"/>
+</test>
+<test id="s1-s1-s1-s1-t3" name="Adicionar um novo empregado com primeiro nome muito longo" line="26">
+<kw name="Fazer Login" owner="keywords_metodos">
+<kw name="Abrir a pagina de login" owner="login_keywords">
+<kw name="Abrir Navegador" owner="keywords_metodos">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T22:11:21.455787" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\bdda151c-03d4-4079-aa12-33a409f2a202"}</msg>
+<msg time="2025-08-27T22:11:21.776196" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\bdda151c-03d4-4079-aa12-33a409f2a202"}</msg>
+<arg>${navegador}</arg>
+<arg>headless=${True}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:21.453147" elapsed="0.323517"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-27T22:11:21.781505" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-08-27T22:11:21.803579" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-27T22:11:21.803786" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:21.777206" elapsed="0.026788"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T22:11:24.721582" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-27T22:11:21.804486" elapsed="2.917670"/>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>${navegador}</arg>
+<status status="PASS" start="2025-08-27T22:11:21.450763" elapsed="3.271720"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:21.448131" elapsed="3.274560"/>
+</kw>
+<kw name="Preencher o campo Username com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:25.647511" level="INFO">Waited for Element with selector input[name="username"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:24.726369" elapsed="0.921611"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:25.650454" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:25.648551" elapsed="0.049484"/>
+</kw>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-08-27T22:11:24.724712" elapsed="0.973696"/>
+</kw>
+<arg>Admin</arg>
+<status status="PASS" start="2025-08-27T22:11:24.723178" elapsed="0.975456"/>
+</kw>
+<kw name="Preencher o campo Password com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:25.723983" level="INFO">Waited for Element with selector input[name="password"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:25.702667" elapsed="0.021767"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:25.727291" level="INFO">Fills the text 'admin123' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:25.725409" elapsed="0.096468"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-27T22:11:25.700873" elapsed="0.121378"/>
+</kw>
+<arg>admin123</arg>
+<status status="PASS" start="2025-08-27T22:11:25.699103" elapsed="0.123354"/>
+</kw>
+<kw name="Clicar no botão Login" owner="login_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:25.872135" level="INFO">Waited for Element with selector button:has-text("Login") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:25.825854" elapsed="0.046774"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:25.874912" level="INFO">Clicks the element 'button:has-text("Login")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:25.873156" elapsed="1.075728"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:25.824375" elapsed="1.124876"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:25.822943" elapsed="1.126531"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:21.445999" elapsed="5.503653"/>
+</kw>
+<kw name="Clicar no menu PIM" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:27.717186" level="INFO">Waited for Element with selector span.oxd-main-menu-item--name:has-text("PIM") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:26.955332" elapsed="0.762339"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:27.720683" level="INFO">Clicks the element 'span.oxd-main-menu-item--name:has-text("PIM")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:27.718528" elapsed="1.099714"/>
+</kw>
+<arg>${PIM_MENU}</arg>
+<status status="PASS" start="2025-08-27T22:11:26.953800" elapsed="1.864833"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:26.952320" elapsed="1.866511"/>
+</kw>
+<kw name="Clicar no botão Add Employee" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:29.449028" level="INFO">Waited for Element with selector a:has-text("Add Employee") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:28.825358" elapsed="0.624149"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:29.452744" level="INFO">Clicks the element 'a:has-text("Add Employee")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:29.450055" elapsed="0.669792"/>
+</kw>
+<arg>${ADD_EMPLOYEE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:28.823692" elapsed="1.296524"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:28.822165" elapsed="1.298249"/>
+</kw>
+<kw name="Preencher o campo First Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:30.704975" level="INFO">Waited for Element with selector input[name="firstName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:30.127591" elapsed="0.577863"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:30.707984" level="INFO">Fills the text 'Marcosmarcosmarcosmarcosmarcosmarcosmarcosmarcos' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:30.706010" elapsed="0.056933"/>
+</kw>
+<arg>${first_name_field}</arg>
+<arg>${first_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:30.125994" elapsed="0.637333"/>
+</kw>
+<arg>Marcosmarcosmarcosmarcosmarcosmarcosmarcosmarcos</arg>
+<status status="PASS" start="2025-08-27T22:11:30.124456" elapsed="0.639078"/>
+</kw>
+<kw name="Preencher o campo Middle Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:30.812155" level="INFO">Waited for Element with selector input[name="middleName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:30.770358" elapsed="0.042295"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:30.817292" level="INFO">Fills the text 'Dion' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:30.813873" elapsed="0.042209"/>
+</kw>
+<arg>${middle_name_field}</arg>
+<arg>${middle_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:30.768626" elapsed="0.087826"/>
+</kw>
+<arg>Dion</arg>
+<status status="PASS" start="2025-08-27T22:11:30.766894" elapsed="0.089770"/>
+</kw>
+<kw name="Preencher o campo Last Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:30.900961" level="INFO">Waited for Element with selector input[name="lastName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:30.863546" elapsed="0.038189"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:30.905121" level="INFO">Fills the text 'Silva' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:30.902793" elapsed="0.060347"/>
+</kw>
+<arg>${last_name_field}</arg>
+<arg>${last_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:30.861928" elapsed="0.101600"/>
+</kw>
+<arg>Silva</arg>
+<status status="PASS" start="2025-08-27T22:11:30.860155" elapsed="0.103600"/>
+</kw>
+<kw name="Clicar no botão Save" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:31.009769" level="INFO">Waited for Element with selector button:has-text("Save") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:30.967915" elapsed="0.042450"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:31.014677" level="INFO">Clicks the element 'button:has-text("Save")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.011237" elapsed="0.131525"/>
+</kw>
+<arg>${SAVE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:30.966399" elapsed="0.176785"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:30.964771" elapsed="0.178770"/>
+</kw>
+<kw name="Verificar Existencia de Texto" owner="keywords_metodos">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-08-27T22:11:31.208486" level="INFO">Found locator('text=Should not exceed 30 characters').first() Locators successfully.</msg>
+<msg time="2025-08-27T22:11:31.209179" level="INFO">${elementos} = ['text=Should not exceed 30 characters &gt;&gt; nth=0']</msg>
+<var>${elementos}</var>
+<arg>text=${texto}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.148731" elapsed="0.060557"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-27T22:11:31.210798" level="INFO">Length is 1.</msg>
+<msg time="2025-08-27T22:11:31.211082" level="INFO">${quantidade} = 1</msg>
+<var>${quantidade}</var>
+<arg>${elementos}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.209806" elapsed="0.001362"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T22:11:31.215731" level="INFO">"1 elemento(s) encontrado(s) com o texto 'Should not exceed 30 characters'"</msg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.213799" elapsed="0.002156"/>
+</kw>
+<arg>${quantidade} &gt;= 1</arg>
+<arg>Log</arg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.211659" elapsed="0.004554"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${quantidade} &lt; 1</arg>
+<arg>Fail</arg>
+<arg>"Nenhum elemento encontrado com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.216698" elapsed="0.001236"/>
+</kw>
+<arg>Should not exceed 30 characters</arg>
+<status status="PASS" start="2025-08-27T22:11:31.147004" elapsed="0.071271"/>
+</kw>
+<kw name="Fechar Navegador" owner="keywords_metodos">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-27T22:11:31.504629" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.222613" elapsed="0.282456"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:31.221155" elapsed="0.284221"/>
+</kw>
+<tag>CT_008</tag>
+<tag>pim</tag>
+<tag>sad_path</tag>
+<status status="PASS" start="2025-08-27T22:11:21.435922" elapsed="10.071309"/>
+</test>
+<test id="s1-s1-s1-s1-t4" name="Adicionar um novo empregado com sobrenome muito longo" line="38">
+<kw name="Fazer Login" owner="keywords_metodos">
+<kw name="Abrir a pagina de login" owner="login_keywords">
+<kw name="Abrir Navegador" owner="keywords_metodos">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T22:11:31.547197" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\0e3d1bd0-36a6-4898-83de-2c303ce7a5a1"}</msg>
+<msg time="2025-08-27T22:11:31.824353" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\0e3d1bd0-36a6-4898-83de-2c303ce7a5a1"}</msg>
+<arg>${navegador}</arg>
+<arg>headless=${True}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.543512" elapsed="0.281320"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-27T22:11:31.829699" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-08-27T22:11:31.844163" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-27T22:11:31.844365" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.825373" elapsed="0.019193"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T22:11:35.001533" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-27T22:11:31.845053" elapsed="3.157064"/>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>${navegador}</arg>
+<status status="PASS" start="2025-08-27T22:11:31.541901" elapsed="3.460538"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:31.540269" elapsed="3.462368"/>
+</kw>
+<kw name="Preencher o campo Username com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:35.907396" level="INFO">Waited for Element with selector input[name="username"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:35.006306" elapsed="0.901670"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:35.910356" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:35.908510" elapsed="0.137803"/>
+</kw>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-08-27T22:11:35.004646" elapsed="1.042041"/>
+</kw>
+<arg>Admin</arg>
+<status status="PASS" start="2025-08-27T22:11:35.003136" elapsed="1.043757"/>
+</kw>
+<kw name="Preencher o campo Password com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:36.072374" level="INFO">Waited for Element with selector input[name="password"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:36.050615" elapsed="0.022243"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:36.075287" level="INFO">Fills the text 'admin123' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:36.073405" elapsed="0.061962"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-27T22:11:36.049024" elapsed="0.086715"/>
+</kw>
+<arg>admin123</arg>
+<status status="PASS" start="2025-08-27T22:11:36.047370" elapsed="0.088576"/>
+</kw>
+<kw name="Clicar no botão Login" owner="login_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:36.175775" level="INFO">Waited for Element with selector button:has-text("Login") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:36.139298" elapsed="0.036946"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:36.178630" level="INFO">Clicks the element 'button:has-text("Login")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:36.176786" elapsed="0.986829"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:36.137833" elapsed="1.026162"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:36.136423" elapsed="1.027770"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:31.538850" elapsed="5.625516"/>
+</kw>
+<kw name="Clicar no menu PIM" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:37.888996" level="INFO">Waited for Element with selector span.oxd-main-menu-item--name:has-text("PIM") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:37.170443" elapsed="0.719017"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:37.894212" level="INFO">Clicks the element 'span.oxd-main-menu-item--name:has-text("PIM")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:37.890127" elapsed="1.049193"/>
+</kw>
+<arg>${PIM_MENU}</arg>
+<status status="PASS" start="2025-08-27T22:11:37.168898" elapsed="1.770783"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:37.167446" elapsed="1.772434"/>
+</kw>
+<kw name="Clicar no botão Add Employee" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:39.670581" level="INFO">Waited for Element with selector a:has-text("Add Employee") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:39.064927" elapsed="0.606112"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:39.673325" level="INFO">Clicks the element 'a:has-text("Add Employee")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:39.671581" elapsed="0.786823"/>
+</kw>
+<arg>${ADD_EMPLOYEE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:39.063431" elapsed="1.395347"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:39.061977" elapsed="1.397003"/>
+</kw>
+<kw name="Preencher o campo First Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:40.941868" level="INFO">Waited for Element with selector input[name="firstName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:40.465962" elapsed="0.476373"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:40.944787" level="INFO">Fills the text 'Marcos' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:40.942895" elapsed="0.052774"/>
+</kw>
+<arg>${first_name_field}</arg>
+<arg>${first_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:40.464307" elapsed="0.531738"/>
+</kw>
+<arg>Marcos</arg>
+<status status="PASS" start="2025-08-27T22:11:40.462810" elapsed="0.533440"/>
+</kw>
+<kw name="Preencher o campo Middle Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:41.035611" level="INFO">Waited for Element with selector input[name="middleName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.002431" elapsed="0.033660"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:41.039475" level="INFO">Fills the text 'Dion' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.037445" elapsed="0.047785"/>
+</kw>
+<arg>${middle_name_field}</arg>
+<arg>${middle_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:41.000854" elapsed="0.084773"/>
+</kw>
+<arg>Dion</arg>
+<status status="PASS" start="2025-08-27T22:11:40.998733" elapsed="0.087100"/>
+</kw>
+<kw name="Preencher o campo Last Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:41.145621" level="INFO">Waited for Element with selector input[name="lastName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.096950" elapsed="0.049855"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:41.150012" level="INFO">Fills the text 'Silvasilvasilvasilvasilvasilvasilva' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.148077" elapsed="0.044566"/>
+</kw>
+<arg>${last_name_field}</arg>
+<arg>${last_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:41.095353" elapsed="0.097908"/>
+</kw>
+<arg>Silvasilvasilvasilvasilvasilvasilva</arg>
+<status status="PASS" start="2025-08-27T22:11:41.093860" elapsed="0.099647"/>
+</kw>
+<kw name="Clicar no botão Save" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:41.228007" level="INFO">Waited for Element with selector button:has-text("Save") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.198355" elapsed="0.030117"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:41.231252" level="INFO">Clicks the element 'button:has-text("Save")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.229025" elapsed="0.602216"/>
+</kw>
+<arg>${SAVE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:41.196869" elapsed="0.634937"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:41.195255" elapsed="0.636760"/>
+</kw>
+<kw name="Verificar Existencia de Texto" owner="keywords_metodos">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-08-27T22:11:41.886589" level="INFO">Found locator('text=Should not exceed 30 characters').first() Locators successfully.</msg>
+<msg time="2025-08-27T22:11:41.887314" level="INFO">${elementos} = ['text=Should not exceed 30 characters &gt;&gt; nth=0']</msg>
+<var>${elementos}</var>
+<arg>text=${texto}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.836252" elapsed="0.051182"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-27T22:11:41.888910" level="INFO">Length is 1.</msg>
+<msg time="2025-08-27T22:11:41.889191" level="INFO">${quantidade} = 1</msg>
+<var>${quantidade}</var>
+<arg>${elementos}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.887939" elapsed="0.001339"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T22:11:41.893483" level="INFO">"1 elemento(s) encontrado(s) com o texto 'Should not exceed 30 characters'"</msg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.892098" elapsed="0.001575"/>
+</kw>
+<arg>${quantidade} &gt;= 1</arg>
+<arg>Log</arg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.889755" elapsed="0.004178"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${quantidade} &lt; 1</arg>
+<arg>Fail</arg>
+<arg>"Nenhum elemento encontrado com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.894353" elapsed="0.001133"/>
+</kw>
+<arg>Should not exceed 30 characters</arg>
+<status status="PASS" start="2025-08-27T22:11:41.834228" elapsed="0.062042"/>
+</kw>
+<kw name="Fechar Navegador" owner="keywords_metodos">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-27T22:11:42.150012" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-27T22:11:41.901541" elapsed="0.248918"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:41.899596" elapsed="0.251174"/>
+</kw>
+<tag>CT_009</tag>
+<tag>pim</tag>
+<tag>sad_path</tag>
+<status status="PASS" start="2025-08-27T22:11:31.527707" elapsed="10.625974"/>
+</test>
+<test id="s1-s1-s1-s1-t5" name="Adicionar um novo empregado com nome do meio muito longo" line="50">
+<kw name="Fazer Login" owner="keywords_metodos">
+<kw name="Abrir a pagina de login" owner="login_keywords">
+<kw name="Abrir Navegador" owner="keywords_metodos">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T22:11:42.212065" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\f34a8762-0bc6-4c90-b351-edbdb2881799"}</msg>
+<msg time="2025-08-27T22:11:42.470253" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\f34a8762-0bc6-4c90-b351-edbdb2881799"}</msg>
+<arg>${navegador}</arg>
+<arg>headless=${True}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:42.209381" elapsed="0.261350"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-27T22:11:42.475975" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-08-27T22:11:42.493390" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-27T22:11:42.493597" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:42.471281" elapsed="0.022518"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T22:11:45.537995" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-27T22:11:42.494715" elapsed="3.043806"/>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>${navegador}</arg>
+<status status="PASS" start="2025-08-27T22:11:42.207776" elapsed="3.331071"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:42.206301" elapsed="3.332759"/>
+</kw>
+<kw name="Preencher o campo Username com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:46.167540" level="INFO">Waited for Element with selector input[name="username"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:45.542652" elapsed="0.625378"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:46.170420" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:46.168567" elapsed="0.042933"/>
+</kw>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-08-27T22:11:45.541022" elapsed="0.671828"/>
+</kw>
+<arg>Admin</arg>
+<status status="PASS" start="2025-08-27T22:11:45.539518" elapsed="0.673667"/>
+</kw>
+<kw name="Preencher o campo Password com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:46.243861" level="INFO">Waited for Element with selector input[name="password"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:46.216831" elapsed="0.027519"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:46.246757" level="INFO">Fills the text 'admin123' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:46.244880" elapsed="0.046984"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-27T22:11:46.215186" elapsed="0.077052"/>
+</kw>
+<arg>admin123</arg>
+<status status="PASS" start="2025-08-27T22:11:46.213670" elapsed="0.078772"/>
+</kw>
+<kw name="Clicar no botão Login" owner="login_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:46.315925" level="INFO">Waited for Element with selector button:has-text("Login") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:46.295881" elapsed="0.020537"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:46.319322" level="INFO">Clicks the element 'button:has-text("Login")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:46.316952" elapsed="1.107218"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:46.294352" elapsed="1.130181"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:46.292934" elapsed="1.131789"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:42.204868" elapsed="5.220028"/>
+</kw>
+<kw name="Clicar no menu PIM" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:48.554523" level="INFO">Waited for Element with selector span.oxd-main-menu-item--name:has-text("PIM") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:47.442906" elapsed="1.112100"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:48.557505" level="INFO">Clicks the element 'span.oxd-main-menu-item--name:has-text("PIM")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:48.555526" elapsed="1.123515"/>
+</kw>
+<arg>${PIM_MENU}</arg>
+<status status="PASS" start="2025-08-27T22:11:47.441388" elapsed="2.238013"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:47.439954" elapsed="2.239639"/>
+</kw>
+<kw name="Clicar no botão Add Employee" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:50.335119" level="INFO">Waited for Element with selector a:has-text("Add Employee") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:49.688849" elapsed="0.646744"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:50.338603" level="INFO">Clicks the element 'a:has-text("Add Employee")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:50.336140" elapsed="0.515901"/>
+</kw>
+<arg>${ADD_EMPLOYEE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:49.687393" elapsed="1.165005"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:49.685802" elapsed="1.166787"/>
+</kw>
+<kw name="Preencher o campo First Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:51.480278" level="INFO">Waited for Element with selector input[name="firstName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:50.859757" elapsed="0.621010"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:51.483266" level="INFO">Fills the text 'Marcos' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.481314" elapsed="0.035581"/>
+</kw>
+<arg>${first_name_field}</arg>
+<arg>${first_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:50.858118" elapsed="0.659244"/>
+</kw>
+<arg>Marcos</arg>
+<status status="PASS" start="2025-08-27T22:11:50.856580" elapsed="0.660989"/>
+</kw>
+<kw name="Preencher o campo Middle Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:51.563931" level="INFO">Waited for Element with selector input[name="middleName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.523425" elapsed="0.041231"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:51.568266" level="INFO">Fills the text 'Diondiondiondiondiondiondiondion' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.565395" elapsed="0.039681"/>
+</kw>
+<arg>${middle_name_field}</arg>
+<arg>${middle_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:51.521776" elapsed="0.083706"/>
+</kw>
+<arg>Diondiondiondiondiondiondiondion</arg>
+<status status="PASS" start="2025-08-27T22:11:51.520219" elapsed="0.085467"/>
+</kw>
+<kw name="Preencher o campo Last Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:51.642636" level="INFO">Waited for Element with selector input[name="lastName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.613404" elapsed="0.029865"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:51.645898" level="INFO">Fills the text 'Silva' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.643835" elapsed="0.059218"/>
+</kw>
+<arg>${last_name_field}</arg>
+<arg>${last_name}</arg>
+<status status="PASS" start="2025-08-27T22:11:51.611072" elapsed="0.092906"/>
+</kw>
+<arg>Silva</arg>
+<status status="PASS" start="2025-08-27T22:11:51.609242" elapsed="0.094953"/>
+</kw>
+<kw name="Clicar no botão Save" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:51.766974" level="INFO">Waited for Element with selector button:has-text("Save") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.713158" elapsed="0.054610"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:51.770664" level="INFO">Clicks the element 'button:has-text("Save")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.768837" elapsed="0.096559"/>
+</kw>
+<arg>${SAVE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:51.711540" elapsed="0.154231"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:51.710126" elapsed="0.155840"/>
+</kw>
+<kw name="Verificar Existencia de Texto" owner="keywords_metodos">
+<kw name="Get Elements" owner="Browser">
+<msg time="2025-08-27T22:11:51.926358" level="INFO">Found locator('text=Should not exceed 30 characters').first() Locators successfully.</msg>
+<msg time="2025-08-27T22:11:51.927065" level="INFO">${elementos} = ['text=Should not exceed 30 characters &gt;&gt; nth=0']</msg>
+<var>${elementos}</var>
+<arg>text=${texto}</arg>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns a reference to Playwright [https://playwright.dev/docs/api/class-locator|Locator]
+for all matched elements by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.873593" elapsed="0.053584"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2025-08-27T22:11:51.929167" level="INFO">Length is 1.</msg>
+<msg time="2025-08-27T22:11:51.929784" level="INFO">${quantidade} = 1</msg>
+<var>${quantidade}</var>
+<arg>${elementos}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.927701" elapsed="0.002226"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<kw name="Log" owner="BuiltIn">
+<msg time="2025-08-27T22:11:51.933510" level="INFO">"1 elemento(s) encontrado(s) com o texto 'Should not exceed 30 characters'"</msg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.932362" elapsed="0.001337"/>
+</kw>
+<arg>${quantidade} &gt;= 1</arg>
+<arg>Log</arg>
+<arg>"${quantidade} elemento(s) encontrado(s) com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.930896" elapsed="0.003050"/>
+</kw>
+<kw name="Run Keyword If" owner="BuiltIn">
+<arg>${quantidade} &lt; 1</arg>
+<arg>Fail</arg>
+<arg>"Nenhum elemento encontrado com o texto '${texto}'"</arg>
+<doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.934386" elapsed="0.001448"/>
+</kw>
+<arg>Should not exceed 30 characters</arg>
+<status status="PASS" start="2025-08-27T22:11:51.871843" elapsed="0.064334"/>
+</kw>
+<kw name="Fechar Navegador" owner="keywords_metodos">
+<kw name="Close Browser" owner="Browser">
+<msg time="2025-08-27T22:11:52.152775" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-08-27T22:11:51.939552" elapsed="0.213684"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:51.938160" elapsed="0.215386"/>
+</kw>
+<tag>CT_010</tag>
+<tag>pim</tag>
+<tag>sad_path</tag>
+<status status="PASS" start="2025-08-27T22:11:42.194381" elapsed="9.961990"/>
+</test>
+<test id="s1-s1-s1-s1-t6" name="Adicionar um novo empregado com caracteres especiais no nome" line="62">
+<kw name="Fazer Login" owner="keywords_metodos">
+<kw name="Abrir a pagina de login" owner="login_keywords">
+<kw name="Abrir Navegador" owner="keywords_metodos">
+<kw name="New Browser" owner="Browser">
+<msg time="2025-08-27T22:11:52.207637" level="INFO">{"browser": "chromium", "headless": true, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\8db08f5c-8a43-44e7-9a1e-90004234779a"}</msg>
+<msg time="2025-08-27T22:11:52.451376" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":true,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"C:\\Users\\marcosdionotrabalho\\e2e-testing-lab\\orangehrm\\browser\\traces\\temp\\8db08f5c-8a43-44e7-9a1e-90004234779a"}</msg>
+<arg>${navegador}</arg>
+<arg>headless=${True}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:52.204968" elapsed="0.246887"/>
+</kw>
+<kw name="New Context" owner="Browser">
+<msg time="2025-08-27T22:11:52.457035" level="INFO">{
+  "acceptDownloads": true,
+  "bypassCSP": false,
+  "forcedColors": "none",
+  "ignoreHTTPSErrors": false,
+  "javaScriptEnabled": true,
+  "offline": false,
+  "reducedMotion": "no-preference",
+  "serviceWorkers": "allow",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}</msg>
+<msg time="2025-08-27T22:11:52.472964" level="INFO">Successfully created context. </msg>
+<msg time="2025-08-27T22:11:52.473171" level="INFO">{'acceptDownloads': True, 'bypassCSP': False, 'forcedColors': 'none', 'ignoreHTTPSErrors': False, 'javaScriptEnabled': True, 'offline': False, 'reducedMotion': 'no-preference', 'serviceWorkers': 'allow', 'viewport': {'height': 720, 'width': 1280}}</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new BrowserContext with specified options.</doc>
+<status status="PASS" start="2025-08-27T22:11:52.452393" elapsed="0.020991"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2025-08-27T22:11:55.561097" level="INFO">Successfully initialized new page object and opened url: https://opensource-demo.orangehrmlive.com/web/index.php/auth/login</msg>
+<arg>${BASE_URL}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2025-08-27T22:11:52.473858" elapsed="3.087768"/>
+</kw>
+<arg>${BASE_URL}</arg>
+<arg>${navegador}</arg>
+<status status="PASS" start="2025-08-27T22:11:52.202610" elapsed="3.359800"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:52.191720" elapsed="3.371237"/>
+</kw>
+<kw name="Preencher o campo Username com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:56.482120" level="INFO">Waited for Element with selector input[name="username"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:55.566886" elapsed="0.915710"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:56.484928" level="INFO">Fills the text 'Admin' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:56.483114" elapsed="0.047753"/>
+</kw>
+<arg>${USERNAME_FIELD}</arg>
+<arg>${username}</arg>
+<status status="PASS" start="2025-08-27T22:11:55.564969" elapsed="0.966269"/>
+</kw>
+<arg>Admin</arg>
+<status status="PASS" start="2025-08-27T22:11:55.563470" elapsed="0.967977"/>
+</kw>
+<kw name="Preencher o campo Password com" owner="login_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:56.564963" level="INFO">Waited for Element with selector input[name="password"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:56.535234" elapsed="0.030238"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:11:56.567917" level="INFO">Fills the text 'admin123' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:56.565999" elapsed="0.049157"/>
+</kw>
+<arg>${PASSWORD_FIELD}</arg>
+<arg>${password}</arg>
+<status status="PASS" start="2025-08-27T22:11:56.533438" elapsed="0.082109"/>
+</kw>
+<arg>admin123</arg>
+<status status="PASS" start="2025-08-27T22:11:56.531935" elapsed="0.083820"/>
+</kw>
+<kw name="Clicar no botão Login" owner="login_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:56.644607" level="INFO">Waited for Element with selector button:has-text("Login") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:56.619640" elapsed="0.025597"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:56.647929" level="INFO">Clicks the element 'button:has-text("Login")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:56.645799" elapsed="1.388263"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:11:56.618088" elapsed="1.416335"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:56.616232" elapsed="1.418415"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:52.190102" elapsed="5.844728"/>
+</kw>
+<kw name="Clicar no menu PIM" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:11:58.771693" level="INFO">Waited for Element with selector span.oxd-main-menu-item--name:has-text("PIM") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:11:58.055576" elapsed="0.716600"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:11:58.774618" level="INFO">Clicks the element 'span.oxd-main-menu-item--name:has-text("PIM")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:11:58.772701" elapsed="3.685146"/>
+</kw>
+<arg>${PIM_MENU}</arg>
+<status status="PASS" start="2025-08-27T22:11:58.054104" elapsed="4.404129"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:11:58.052659" elapsed="4.405796"/>
+</kw>
+<kw name="Clicar no botão Add Employee" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:12:03.719063" level="INFO">Waited for Element with selector a:has-text("Add Employee") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:12:02.554529" elapsed="1.165094"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:12:03.721955" level="INFO">Clicks the element 'a:has-text("Add Employee")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:12:03.720159" elapsed="0.569825"/>
+</kw>
+<arg>${ADD_EMPLOYEE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:12:02.553028" elapsed="1.737325"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:12:02.551542" elapsed="1.739011"/>
+</kw>
+<kw name="Preencher o campo First Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:12:04.967986" level="INFO">Waited for Element with selector input[name="firstName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:12:04.370712" elapsed="0.597757"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:12:04.970992" level="INFO">Fills the text 'Mar@cos' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:12:04.969025" elapsed="0.042792"/>
+</kw>
+<arg>${first_name_field}</arg>
+<arg>${first_name}</arg>
+<status status="PASS" start="2025-08-27T22:12:04.369062" elapsed="0.643131"/>
+</kw>
+<arg>Mar@cos</arg>
+<status status="PASS" start="2025-08-27T22:12:04.365582" elapsed="0.646821"/>
+</kw>
+<kw name="Preencher o campo Middle Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:12:05.050761" level="INFO">Waited for Element with selector input[name="middleName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:12:05.019609" elapsed="0.031813"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:12:05.054477" level="INFO">Fills the text 'D!on' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:12:05.052117" elapsed="0.051649"/>
+</kw>
+<arg>${middle_name_field}</arg>
+<arg>${middle_name}</arg>
+<status status="PASS" start="2025-08-27T22:12:05.017803" elapsed="0.086342"/>
+</kw>
+<arg>D!on</arg>
+<status status="PASS" start="2025-08-27T22:12:05.015224" elapsed="0.089152"/>
+</kw>
+<kw name="Preencher o campo Last Name com" owner="pim_keywords">
+<kw name="Preencher Campo" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:12:05.140999" level="INFO">Waited for Element with selector input[name="lastName"] at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:12:05.115188" elapsed="0.026292"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2025-08-27T22:12:05.147516" level="INFO">Fills the text 'Silv#a' in the given field.</msg>
+<arg>${elemento}</arg>
+<arg>${texto}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:12:05.143616" elapsed="0.053314"/>
+</kw>
+<arg>${last_name_field}</arg>
+<arg>${last_name}</arg>
+<status status="PASS" start="2025-08-27T22:12:05.113578" elapsed="0.083727"/>
+</kw>
+<arg>Silv#a</arg>
+<status status="PASS" start="2025-08-27T22:12:05.111835" elapsed="0.085678"/>
+</kw>
+<kw name="Clicar no botão Save" owner="pim_keywords">
+<kw name="Clicar" owner="keywords_metodos">
+<kw name="Wait For Elements State" owner="Browser">
+<msg time="2025-08-27T22:12:05.225482" level="INFO">Waited for Element with selector button:has-text("Save") at state visible</msg>
+<arg>${elemento}</arg>
+<arg>visible</arg>
+<arg>timeout=10s</arg>
+<tag>PageContent</tag>
+<tag>Wait</tag>
+<doc>Waits for the element found by ``selector`` to satisfy state option.</doc>
+<status status="PASS" start="2025-08-27T22:12:05.203239" elapsed="0.022754"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2025-08-27T22:12:05.228561" level="INFO">Clicks the element 'button:has-text("Save")'.</msg>
+<arg>${elemento}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2025-08-27T22:12:05.226522" elapsed="0.157999"/>
+</kw>
+<arg>${SAVE_BUTTON}</arg>
+<status status="PASS" start="2025-08-27T22:12:05.201728" elapsed="0.183159"/>
+</kw>
+<status status="PASS" start="2025-08-27T22:12:05.199941" elapsed="0.185149"/>
+</kw>
+<msg time="2025-08-27T22:12:05.449067" level="INFO">Switching context to context=445ab8f6-fc3b-49d3-aaa2-226db7ccf17c in CURRENT</msg>
+<msg time="2025-08-27T22:12:05.502316" level="INFO">Successfully changed active context: context=445ab8f6-fc3b-49d3-aaa2-226db7ccf17c</msg>
+<msg time="2025-08-27T22:12:05.523453" level="INFO">Successfully closed Context</msg>
+<tag>CT_011</tag>
+<tag>pim</tag>
+<tag>sad_path</tag>
+<status status="PASS" start="2025-08-27T22:11:52.174576" elapsed="13.212954"/>
+</test>
+<status status="FAIL" start="2025-08-27T22:10:15.779251" elapsed="109.748253"/>
+</suite>
+<status status="FAIL" start="2025-08-27T22:10:15.738090" elapsed="109.852545"/>
+</suite>
+<status status="FAIL" start="2025-08-27T22:10:15.727731" elapsed="109.891975"/>
+</suite>
+<status status="FAIL" start="2025-08-27T22:10:15.617132" elapsed="110.008945"/>
+</suite>
+<statistics>
+<total>
+<stat pass="5" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1" skip="0">CT_006</stat>
+<stat pass="1" fail="0" skip="0">CT_007</stat>
+<stat pass="1" fail="0" skip="0">CT_008</stat>
+<stat pass="1" fail="0" skip="0">CT_009</stat>
+<stat pass="1" fail="0" skip="0">CT_010</stat>
+<stat pass="1" fail="0" skip="0">CT_011</stat>
+<stat pass="0" fail="1" skip="0">happy_path</stat>
+<stat pass="5" fail="1" skip="0">pim</stat>
+<stat pass="5" fail="0" skip="0">sad_path</stat>
+</tag>
+<suite>
+<stat name="Orangehrm" id="s1" pass="5" fail="1" skip="0">Orangehrm</stat>
+<stat name="Tests" id="s1-s1" pass="5" fail="1" skip="0">Orangehrm.Tests</stat>
+<stat name="Pim" id="s1-s1-s1" pass="5" fail="1" skip="0">Orangehrm.Tests.Pim</stat>
+<stat name="Pim Add Employee Tests" id="s1-s1-s1-s1" pass="5" fail="1" skip="0">Orangehrm.Tests.Pim.Pim Add Employee Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

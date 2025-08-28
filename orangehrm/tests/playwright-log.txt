@@ -1,0 +1,68 @@
+{"level":30,"time":"2025-08-26T18:24:29.565Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Listening on 127.0.0.1:52832"}
+(node:2232) DeprecationWarning: Calling start() is no longer necessary. It can be safely omitted.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+{"level":30,"time":"2025-08-26T18:24:30.884Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Start of node method newBrowser"}
+{"level":30,"time":"2025-08-26T18:25:20.210Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Error of node method  newBrowser"}
+================= Original suppressed error =================
+browserType.launch: Timeout 30000ms exceeded.
+Call log:
+[2m  - <launching> C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\playwright-core\.local-browsers\chromium-1187\chrome-win\chrome.exe --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-extensions --disable-features=AcceptCHFrame,AvoidUnnecessaryBeforeUnloadCheckSync,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --enable-automation --no-sandbox --user-data-dir=C:\Users\MARCOS~1\AppData\Local\Temp\playwright_chromiumdev_profile-oBNoIb --remote-debugging-pipe --no-startup-window[22m
+[2m  - <launched> pid=2796[22m
+
+    at _newBrowser (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:12098:54)
+    at newBrowser (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:12620:33)
+    at PlaywrightServer.newBrowser (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:13137:34)
+    at Object.onReceiveHalfClose (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18) {
+  name: 'TimeoutError'
+}
+=============================================================
+{"level":30,"time":"2025-08-26T18:25:20.230Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Start of node method takeScreenshot"}
+================= Original suppressed error =================
+Error: Tried to take screenshot, but no page was open.
+    at exists (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:10725:11)
+    at takeScreenshot (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:10769:3)
+    at PlaywrightServer.takeScreenshot (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:13137:34)
+    at Object.onReceiveHalfClose (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-26T18:25:20.231Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Error of node method  takeScreenshot"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-26T18:25:20.558Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-26T18:25:20.592Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"End of node method getBrowserCatalog"}
+================= Original suppressed error =================
+Error: Browser has been closed.
+    at PlaywrightState.getActiveBrowser (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:12227:15)
+    at PlaywrightServer.getActiveBrowser (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:13124:59)
+    at PlaywrightServer.setTimeout (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\index.js:13372:57)
+    at Object.onReceiveHalfClose (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server.js:1461:25)
+    at BaseServerInterceptingCall.maybePushNextMessage (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:575:31)
+    at BaseServerInterceptingCall.handleEndEvent (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:615:14)
+    at ServerHttp2Stream.<anonymous> (C:\Users\marcosdionotrabalho\e2e-testing-lab\orangehrm\venv\Lib\site-packages\Browser\wrapper\node_modules\@grpc\grpc-js\build\src\server-interceptors.js:382:18)
+    at ServerHttp2Stream.emit (node:events:536:35)
+    at endReadableNT (node:internal/streams/readable:1698:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+=============================================================
+{"level":30,"time":"2025-08-26T18:25:20.695Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Start of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-26T18:25:20.696Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"End of node method getBrowserCatalog"}
+{"level":30,"time":"2025-08-26T18:25:22.377Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"Start of node method closeAllBrowsers"}
+{"level":30,"time":"2025-08-26T18:25:22.378Z","pid":2232,"hostname":"DESKTOP-EB00P8O","msg":"End of node method closeAllBrowsers"}
