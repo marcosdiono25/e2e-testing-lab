@@ -38,7 +38,6 @@ jobs:
 
       - name: List results folder
         run: ls -l results
-
       - name: Upload Robot Framework reports
         uses: actions/upload-artifact@v4
         with:
